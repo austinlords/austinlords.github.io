@@ -1,0 +1,207 @@
+:root {
+  --primary: #FBE8A6;
+  --secondary: #B4DFE5;
+  --darkprimary: #F4976C;
+  --darkprimaryRBG: 244, 151, 108;
+  --darksecondary: #303C6C;
+  --light: #D2FDFF;
+  --lightRGB: 210, 253, 255;
+  --navheight: 65px;
+}
+
+body {
+  background-color: var(--light);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-size: 1rem;
+  color: black;
+}
+
+nav {
+  background-color: white;
+  height: var(--navheight);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  align-items: center;
+  box-shadow: 0px 5px 5px -5px black;
+  z-index: 1000;
+}
+
+.container {
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+  min-width: 300px;
+}
+
+.navbar-heading {
+  display: flex;
+  align-items: center;
+  height: 65px;
+  padding: 0 20px;
+  justify-content: space-between;
+  font-size: 150%;
+  width: 100%;
+}
+
+.navbar-icon {
+  transition: transform .2s;
+  padding: 10px;
+}
+
+.navbar-icon:hover {
+  transform: scale(1.1), border: 1px solid;
+}
+
+.navbar-link {
+  color: black;
+  text-decoration: none;
+}
+
+.navbar-link:hover {
+  color: blue;
+  cursor: pointer;
+}
+
+.navbar-brand:hover {
+  color: black;
+}
+
+.navbar-menu {
+  background-color: white;
+  width: 100%;
+  height: auto;
+  box-shadow: -1px 5px 5px -5px black;
+}
+
+.initially-hidden {
+  display: none;
+}
+
+.navbar-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  color: black;
+  margin: 0;
+  padding: 0 20px 20px 20px;
+  line-height: 1.75rem;
+  align-items: flex-end;
+  font-size: 120%;
+}
+
+.background-image {
+  background-image: url('../img/bg-masthead.jpg');
+  background-size: cover;
+  background-position: center;
+  height: calc(100vh - var(--navheight));
+  margin-top: var(--navheight);
+  min-height: 400px;
+}
+
+.background-layer {
+  width: 100%; 
+  height: calc(100% - 20vh);
+  background: rgba(70, 70, 70, 0.5);
+  padding-top: 20vh;
+}
+
+.home-title {
+  width: 100%;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+  margin: 20px;
+}
+
+hr.divider {
+  width: 100px;
+  border-top: 5px solid var(--darkprimary);
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+}
+
+.thumbnail {
+  width: 50px;
+  height: 50px;
+  border-radius: 90%;
+  background-color: white;
+}
+
+.home-subtitles {
+  color: white;
+  font: 1.25rem;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+#scroll-down-icon {
+  color: white;
+  width: 100%;
+  font-size: 1.5rem;
+  justify-self: center;
+  margin-top: 75px;
+  text-align: center;
+}
+
+.anchor {
+  position: absolute;
+  top: -65px;
+}
+
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+  
+  .navbar-menu {
+    width: 200px;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .home-title {
+    font-size: 3rem;
+  }
+
+  .home-subtitles {
+    font-size: 1.25rem;
+  }
+
+  #scroll-down-icon {
+    font-size: 2rem;
+    margin-top: 150px;
+  }
+  .background-image {
+    min-height: 550px;
+  }
+
+}
+
+@media (min-width: 1140px) {
+  .container {
+    max-width: 1140px;
+  }
+}
