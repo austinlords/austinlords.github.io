@@ -17,7 +17,7 @@
   <a class='anchor' id='home-anchor'></a>
   <!-- NAVBAR -->
   <nav id="navbar">
-    <div class='container'>
+    <div class='flex-container'>
       <div class='navbar-heading'>
         <a class='navbar-brand navbar-link' href="#home-anchor">Austin Lords</a>
         <i class='navbar-icon fas fa-bars'></i>
@@ -46,7 +46,7 @@
   <!-- HOME -->
   <section class='page-section' id='welcome-section'>
     <div class='background-layer'>
-      <div class='container'>
+      <div class='flex-container'>
         <h1 class='home-title'>Austin J. Lords</h1>
         <div class='divider bg-darkprimary'></div>
         <p class="home-subtitles">Junior Software Developer</p>
@@ -62,73 +62,121 @@
   <!-- ABOUT ME -->
   <section class="page-section bg-darkprimary" id="about">
     <a class='anchor' id='about-anchor'></a>
-    <div class="container">
+    <div class="flex-container">
       <h1 class='section-header white'>About Me</h1>
       <div class='divider bg-darksecondary'></div>
       <p class='p-block white'>
         Hello World! I am a 24 year old software engineer. I was drawn to the world of programming because I love to solve problems and have always been fascinated by technology. Some of my interests include mountain biking, watching the NBA (go Blazers!) and listening to podcasts. You can view some of my projects below. Let's be in touch!
       </p>
-      <div class='div-center'>
+      <div class='div-center w-100'>
         <img id='aboutme-img' class="img-fluid" src='./img/viaferrata.JPG' alt='Via Ferrata Climb'>
       </div>
     </div>
   </section>
   <!-- /ABOUT ME-->
 
-  <!-- SKILLS 
-
-<div class="">
-        <div id='' class="">
-          <p class=''>Hello World! I am a 24 year old software engineer. I was drawn to the world of programming because I love to solve problems and have always been fascinated by technology. Some of my interests include mountain biking, watching the NBA (go Blazers!) and listening to podcasts. You can view some of my projects below. Let's be in touch!</p>
-        </div>
-        <div class="">
-          <img class="" src='./img/viaferrata.JPG' alt='Via Ferrata Climb'>
-        </div>
+  <!-- SKILLS -->
+  <section class="page-section bg-primary" id="skills">
+    <a class='anchor' id='skills-anchor'></a>
+    <div class="flex-container">
+      <div class='flex-container w-100'>
+        <h2 class="section-header">Skills</h2>
+        <div class='divider bg-darkprimary'></div>
       </div>
-
-  <section class="page-section" id="services">
-    <div class="container">
-      <h2 class="text-center mt-0">SKILLS</h2>
-      <hr class="divider my-4">
-      <div class="row">
-        <div class="col-lg-3 col-md-6 text-center skill-outline">
-          <div class="my-3 skills">
-            <img class='img-fluid mb-4' src='./img/html.png' alt="html">            
-            <h3 class="h4 mb-2">HTML</h3>
+      <div class="flex-container" id='skills-box'>
+        <div class="card-container">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="./img/html.png" alt="" class="img-fluid">
+              <p class='skills-description'>HTML</p>
+            </div>
+            <div class="card-back">
+                <h2 class='skills-heading'>HTML</h2>
+                <div class='divider bg-darkprimary'></div>
+                <ul>
+                  <li>Bootstrap</li>
+                  <li></li>
+                  <li></li>
+                </ul>
+            </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6 text-center skill-outline">
-          <div class="my-3 skills">
-            <img class='img-fluid mb-4' src='./img/css.png' alt="html">            
-            <h3 class="h4 mb-2">CSS</h3>
+        <div class="card-container">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="./img/css.png" alt="" class="img-fluid">
+              <p class='skills-description'>CSS</p>
+            </div>
+            <div class="card-back">
+                <h2 class='skills-heading'>CSS</h2>
+                <div class='divider bg-darkprimary'></div>
+                <ul>
+                  <li>Bootstrap</li>
+                  <li></li>
+                  <li></li>
+                </ul>
+            </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6 text-center skill-outline">
-          <div class="my-3 skills">
-            <img class='img-fluid mb-4' src='./img/javascript.png' alt="html">            
-            <h3 class="h4 mb-2">JavaScript</h3>
+        <div class="card-container">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="./img/javascript.png" alt="" class="img-fluid">
+              <p class='skills-description'>JavaScript</p>
+            </div>
+            <div class="card-back">
+                <h2 class='skills-heading'>JavaScript</h2>
+                <div class='divider bg-darkprimary'></div>
+                <ul>
+                  <li>jQuery</li>
+                  <li></li>
+                  <li></li>
+                </ul>
+            </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6 text-center skill-outline">
-          <div class="my-3 skills">
-            <img class='img-fluid mb-4' src='./img/python.png' alt="html">            
-            <h3 class="h4 mb-2">Python</h3>
+        <div class="card-container">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="./img/python.png" alt="" class="img-fluid">
+              <p class='skills-description'>Python</p>
+            </div>
+            <div class="card-back">
+              <h2 class='skills-heading'>Python</h2>
+              <div class='divider bg-darkprimary'></div>
+              <ul>
+                <li>Django</li>
+                <li>Flask</li>
+                <li>Tkinter</li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6 text-center skill-outline">
-          <div class="my-3 skills">
-            <img class='img-fluid mb-4' src='./img/database.jpg' alt="html">            
-            <h3 class="h4 mb-2">SQL</h3>
+        <div class="card-container">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="./img/database.jpg" alt="" class="img-fluid">
+              <p class='skills-description'>SQL</p>
+            </div>
+            <div class="card-back">
+              <h2 class='skills-heading'>SQL</h2>
+              <div class='divider bg-darkprimary'></div>
+              <ul>
+                <li>SQL Server</li>
+                <li>SQLite</li>
+                <li></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  /SKILLS-->
+<!--/SKILLS-->
 
   <!-- PORTFOLIO 
   <section id="portfolio" class="pt-5">
-    <div class="container-fluid p-0">
+    <div class="flex-container-fluid p-0">
       <h2 class="text-center pt-5">PORTFOLIO</h2>
        <hr class="divider my-4">
       <div class="row no-gutters">
@@ -175,7 +223,7 @@
 
   <!-- CONTACT
   <section class="page-section" id="contact">
-    <div class="container">
+    <div class="flex-container">
       <div class="row justify-content-center">
         <div class="col-lg-8 text-center">
           <h2 class="mt-0">CONTACT</h2>
@@ -199,7 +247,7 @@
 
   <!-- FOOTER 
   <footer class="bg-light py-5">
-    <div class="container">
+    <div class="flex-container">
       <div class="small text-center text-muted">Copyright &copy; 2019 - Austin Lords</div>
     </div>
   </footer>

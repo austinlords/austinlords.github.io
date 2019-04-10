@@ -1,5 +1,10 @@
 
 
+const canHover = !(matchMedia('(hover: none)').matches);
+if(canHover) {
+document.body.classList.add('can-hover');
+}
+
 // front-end 
 
 $(function() {
@@ -11,7 +16,15 @@ $(function() {
     $('.navbar-menu').slideUp();
   });
 
-  
+  $('.card-container').on('mouseenter', function() {
+    $(this).children().toggleClass('flip');
+  })
+
+  $('.card-container').on('mouseleave', function() {
+    $(this).children().toggleClass('flip');
+  })
+
+
 
 
 
