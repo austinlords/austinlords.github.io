@@ -22,7 +22,7 @@
         <a class='navbar-brand navbar-link' href="#home-anchor">Austin Lords</a>
         <i class='navbar-icon fas fa-bars'></i>
       </div>
-      <div class="navbar-menu hidden">
+      <div class="navbar-menu">
         <ul class="navbar-list">
           <li class="navbar-item">
             <a class="navbar-link" href="#about-anchor">About</a>
@@ -66,7 +66,7 @@
       <h1 class='section-header white'>About Me</h1>
       <div class='divider bg-darksecondary'></div>
       <p class='p-block white'>
-        Hello World! I am a 24 year old software engineer. I was drawn to the world of programming because I love to solve problems and have always been fascinated by technology. Some of my interests include mountain biking, watching the NBA (go Blazers!) and listening to podcasts. You can view some of my projects below. Let's be in touch!
+        Hello World! I am a 24 year old full-stack web developer. I was drawn to the world of programming because I love to solve problems and have always been fascinated by technology. Some of my interests include mountain biking, watching the NBA (go Blazers!) and listening to podcasts. You can view some of my projects below. Let's be in touch!
       </p>
       <div class='div-center w-100'>
         <img id='aboutme-img' class="img-fluid" src='./img/viaferrata.JPG' alt='Via Ferrata Climb'>
@@ -174,84 +174,57 @@
   </section>
 <!--/SKILLS-->
 
-  <!-- PORTFOLIO 
-  <section id="portfolio" class="pt-5">
-    <div class="flex-container-fluid p-0">
-      <h2 class="text-center pt-5">PORTFOLIO</h2>
-       <hr class="divider my-4">
-      <div class="row no-gutters">
-        <div class="col-lg-4 col-sm-6 p-1">
-          <div class="portfolio-box">
-            <img class="img-fluid" src="img/portfolio/fullsize/pizza-form-1.PNG" alt="pizza">
-            <div class="portfolio-box-caption">
-              <div class="project-category text-white-50">
-                JavaScript
-              </div>
-              <div class="project-name">
-                Order Pizza
-              </div>
-              <div class='portfolioButton'>
-                <a href='http://www.austinlords.com/pizza-order/' target='_blank'>
-                  <button class='btn btn-info'>View Project</button>
-                </a>
-              </div>
-            </div>
+  <!-- PORTFOLIO -->
+  <section class="page-section bg-darksecondary" id="portfolio" >
+    <a class='anchor' id='portfolio-anchor'></a>
+    <div class="flex-container">
+      <div class="flex-container w-100">
+        <h2 class="section-header light">Portfolio</h2>
+        <div class='divider bg-darkprimary'></div>
+      </div>
+      <div class="flex-container" id='portfolio-box'>
+          
+      </div>
+    </div>
+  </section>
+  <!-- /PORTFOLIO -->
+
+  <!-- CONTACT -->
+  <section class="page-section bg-white" id="contact" >
+    <a class='anchor' id='contact-anchor'></a>
+    <div class="flex-container">
+      <div class="flex-container w-100">
+        <h2 class="section-header darksecondary">Contact</h2>
+        <div class='divider bg-darkprimary'></div>
+      </div>
+      <div class="flex-container" id='contact-box'>
+        <p class="">
+          Give me a call or send an email using the links below. You can also connect with me on <a class='contact-link'href='https://www.linkedin.com/in/austinlords/' target='_blank'>LinkedIn</a> & <a class='contact-link' href='https://www.github.com/austinlords/' target='_blank'>GitHub</a>.
+        </p>
+        <div id='contact-details' class='w-100'>
+          <div>
+            <a class='contact-link' href='tel:406-239-8599'>
+                +1 (406) 239-8599
+              </a>
           </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 p-1">
-          <div class="portfolio-box">
-            <img class="img-fluid" src="img/portfolio/fullsize/pokemon.png" alt="pokemon ball">
-            <div class="portfolio-box-caption">
-              <div class="project-category text-white-50">
-                JavaScript
-              </div>
-              <div class="project-name">
-                Pokemon Memory
-              </div>
-              <div class='portfolioButton'>
-                <a href='http://www.austinlords.com/pokemon-memory/' target='_blank'>
-                  <button class='btn btn-info'>View Project</button>
-                </a>
-              </div>
-            </div>
+          <div>
+            <a class="contact-link" href="mailto:austinlords@outlook.com">
+                austinlords@outlook.com
+              </a>
           </div>
         </div>
       </div>
     </div>
   </section>
-  /PORTFOLIO-->
+  <!-- /CONTACT-->
 
-  <!-- CONTACT
-  <section class="page-section" id="contact">
+  <!-- FOOTER -->
+  <footer class="page-section">
     <div class="flex-container">
-      <div class="row justify-content-center">
-        <div class="col-lg-8 text-center">
-          <h2 class="mt-0">CONTACT</h2>
-          <hr class="divider my-4">
-          <p class="text-muted mb-5">Give me a call or send an email using the links below. You can also connect with me on <a href='https://www.linkedin.com/in/austinlords/' target='_blank'>LinkedIn</a> & <a href='https://www.github.com/austinlords/' target='_blank'>GitHub</a>.</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-4 ml-auto text-center">
-          PHONE ICON
-          <div><a href='tel:406-239-8599'>+1 (406) 239-8599</a></div>
-        </div>
-        <div class="col-lg-4 mr-auto text-center">
-          EMAIL ICON
-          <a class="d-block" href="mailto:austinlords@outlook.com">austinlords@outlook.com</a>
-        </div>
-      </div>
-    </div>
-  </section>
-  /CONTACT-->
-
-  <!-- FOOTER 
-  <footer class="bg-light py-5">
-    <div class="flex-container">
-      <div class="small text-center text-muted">Copyright &copy; 2019 - Austin Lords</div>
+      <div id="footer-content">Copyright &copy; 2019 - Austin Lords</div>
     </div>
   </footer>
-  /FOOTER-->
+  <!-- /FOOTER-->
 
   <!-- jQUERY -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

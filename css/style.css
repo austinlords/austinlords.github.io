@@ -91,6 +91,11 @@ figcaption {
   justify-self: flex-end;
 }
 
+footer {
+  height: 65px!important;
+  background: var(--primary);
+}
+
 .flex-container {
   display: flex;
   margin: auto;
@@ -147,26 +152,23 @@ figcaption {
 
 .navbar-menu {
   background-color: white;
-  width: 100%;
   height: auto;
   box-shadow: -1px 5px 5px -5px black;
-}
-
-.hidden {
   display: none;
+  width: 150px;
+  margin-left: auto;
 }
 
 .navbar-list {
-  list-style: none;
   display: flex;
   flex-direction: column;
   list-style: none;
   color: black;
   margin: 0;
   padding: 0 20px 20px 20px;
-  line-height: 1.75rem;
+  line-height: 2rem;
   align-items: flex-end;
-  font-size: 120%;
+  font-size: 105%;
 }
 
 .page-section {
@@ -268,14 +270,15 @@ figcaption {
 
 #skills-box {
   margin-top: 30px;
-  justify-content: space-around;
+  margin-bottom: 50px;
+  justify-content: center;
   align-items: center;
 }
 
 .card-container {
   width: 150px;
   height: 250px;
-  margin: 10px;
+  margin: 15px;
   perspective: 800px;
 }
 
@@ -334,23 +337,81 @@ figcaption {
   color: var(--primary);
 }
 
+#contact-box {
+  margin: 30px auto 150px auto;
+  text-align: center;
+  font-size: 110%;
+  max-width: 500px;
+  padding: 0px 30px;
+}
+
+#contact-details {
+  margin-top: 50px;
+}
+
+.contact-link {
+  color: var(--darkprimary);
+  text-decoration: none;
+}
+
+.contact-link:hover {
+  color: var(--darksecondary);
+}
+
+#footer-content {
+  padding-top: 25px;
+  margin: auto;
+  font-style: oblique;
+  font-size: 80%;
+  color: var(--darksecondary);
+}
 
 
 @media (min-width: 576px) {
   .flex-container {
     max-width: 540px;
   }
-  
-  .navbar-menu {
-    width: 200px;
-    margin-left: auto;
-  }
+
 }
 
 @media (min-width: 768px) {
   .flex-container {
     max-width: 720px;
   }
+
+  
+.navbar-icon {
+  display: none;
+}
+
+.navbar-menu {
+  background-color: transparent;
+  width: auto;
+  height: 65px;
+  display: flex!important;
+  position: relative;
+  padding: 0 20px;
+  top: -65px;
+  box-shadow: none;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.navbar-list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  color: black;
+  margin: 0;
+  padding: 0;
+  line-height: 1.75rem;
+  align-items: flex-end;
+  font-size: 105%;
+}
+
+.navbar-item {
+  margin: auto 20px;
+}
 
 }
 

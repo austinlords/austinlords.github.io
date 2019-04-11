@@ -13,7 +13,9 @@ $(function() {
   });
 
   $('.navbar-link').on('click', function() {
-    $('.navbar-menu').slideUp();
+    if ($(window).width() < 768){
+      $('.navbar-menu').slideUp();
+    }
   });
 
   $('.card-container').on('mouseenter', function() {
