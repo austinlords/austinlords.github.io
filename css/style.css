@@ -408,6 +408,7 @@ footer {
     "tech tech-content"
     "links links";
   margin-bottom: 10px;
+  align-items: baseline;
 }
 
 .portfolio-description, .portfolio-img {
