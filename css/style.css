@@ -109,8 +109,7 @@ footer {
 .p-block {
   padding: 10px 20px;
   text-align: justify;
-  font-size: 1.1rem;
-  font-style: oblique;
+  line-height: 130%;
 }
 
 .navbar-heading {
@@ -203,9 +202,20 @@ footer {
   margin: 20px;
 }
 
+#about-content {
+  max-width: 700px;
+}
+
 .divider {
   width: 75px;
   height: 3px;
+  margin: 5px auto;
+  display: block;
+}
+
+.projects-divider {
+  width: 200px;
+  height: 1px;
   margin: 5px auto;
   display: block;
 }
@@ -349,6 +359,10 @@ footer {
   margin-top: 50px;
 }
 
+#contact-details>div:first-of-type {
+  margin-bottom: 5px;
+}
+
 .contact-link {
   color: var(--darkprimary);
   text-decoration: none;
@@ -366,6 +380,118 @@ footer {
   color: var(--darksecondary);
 }
 
+.portfolio-box {
+  color: white;
+  margin: 10px auto;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.portfolio-box:last-of-type {
+  margin-bottom: 50px;
+}
+
+.portfolio-description {
+  display: grid;
+  grid-template-rows: repeat(4, auto);
+  grid-template-columns: 90px auto; 
+  grid-template-areas:
+    "name name-content"
+    "description description-content"
+    "date date-content"
+    "tech tech-content"
+    "links links";
+  margin-bottom: 10px;
+}
+
+.portfolio-description, .portfolio-img {
+  max-width: 450px;
+  padding: 10px;
+}
+
+.project-title {
+  font-size: 85%;
+  margin: 5px 0px;
+  font-weight: bold;
+}
+
+.project-content {
+  font-size: 80%;
+  margin: 5px 0px;
+  line-height: 105%;
+  font-style: italic;
+  color: var(--primary);
+}
+
+.project-name {
+  grid-area: name;
+}
+
+.project-description {
+  grid-area: description;
+}
+
+.project-date {
+  grid-area: date;
+}
+
+.project-tech {
+  grid-area: tech;
+}
+
+.name-content {
+  grid-area: name-content;
+}
+
+.description-content {
+  grid-area: description-content;
+}
+
+.date-content {
+  grid-area: date-content;
+}
+
+.tech-content {
+  grid-area: tech-content;
+}
+
+.view-project {
+  grid-area: links;
+  text-align: center;
+  margin: 10px auto 0px auto;
+  font-size: 90%;
+}
+
+.portfolio-img {
+  display: flex;
+  align-items: center;
+}
+
+.portfolio-img-holder {
+  align-items: center;
+  margin: 0px 30px;
+}
+
+.portfolio-link {
+  color: var(--darkprimary);
+  text-decoration: none;
+}
+
+.portfolio-link:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.project-img {
+  border-radius: 5px;
+  box-shadow: 3px 3px 6px -2px black;
+}
+
+@media (max-width: 320px) {
+  .card-container {
+    margin: 4px;
+  }
+}
 
 @media (min-width: 576px) {
   .flex-container {
@@ -379,39 +505,55 @@ footer {
     max-width: 720px;
   }
 
-  
-.navbar-icon {
-  display: none;
-}
+  .navbar-icon {
+    display: none;
+  }
 
-.navbar-menu {
-  background-color: transparent;
-  width: auto;
-  height: 65px;
-  display: flex!important;
-  position: relative;
-  padding: 0 20px;
-  top: -65px;
-  box-shadow: none;
-  flex-direction: row;
-  justify-content: flex-end;
-}
+  .navbar-menu {
+    background-color: transparent;
+    width: auto;
+    height: 65px;
+    display: flex!important;
+    position: relative;
+    padding: 0 20px;
+    top: -65px;
+    box-shadow: none;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
 
-.navbar-list {
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  color: black;
-  margin: 0;
-  padding: 0;
-  line-height: 1.75rem;
-  align-items: flex-end;
-  font-size: 105%;
-}
+  .navbar-list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    color: black;
+    margin: 0;
+    padding: 0;
+    line-height: 1.75rem;
+    align-items: flex-end;
+    font-size: 105%;
+  }
 
-.navbar-item {
-  margin: auto 20px;
-}
+  .navbar-item {
+    margin: auto 20px;
+  }
+
+  .portfolio-box {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .portfolio-description {
+    max-width: 350px;
+    margin-right: 30px;
+    margin-bottom: 0px;
+  }
+
+  .portfolio-img {
+    max-width: 300px;
+    background-color: none;
+    padding: 0px;
+  }
 
 }
 
@@ -443,4 +585,40 @@ footer {
   .flex-container {
     max-width: 1140px;
   }
+
+  .portfolio-description {
+    max-width: 450px;
+    margin-right: 150px;
+    grid-template-columns: 110px auto;
+  }
+  
+  .portfolio-img {
+    max-width: 400px;
+  }
+
+  .project-title {
+    font-size: 100%;
+    margin: 5px 0px;
+    font-weight: bold;
+  }
+
+  .project-content {
+    font-size: 100%;
+    margin: 5px 0px;
+    line-height: 105%;
+    font-style: italic;
+    color: var(--primary);
+  }
+
+  .view-project {
+    grid-area: links;
+    text-align: center;
+    margin: 10px auto 0px auto;
+    font-size: 110%;
+  }
+
+  .projects-divider {
+    width: 400px;
+  }
+
 }
