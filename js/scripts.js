@@ -18,15 +18,9 @@ $(function() {
     }
   });
 
-  $('.card-container').on('mouseenter', function() {
+  $('.card-container').on('click', function() {
     $(this).children().toggleClass('flip');
   })
-
-  $('.card-container').on('mouseleave', function() {
-    $(this).children().toggleClass('flip');
-  })
-
-
 
 
 
