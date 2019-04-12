@@ -128,7 +128,7 @@ footer {
   border-radius: 5px;
 }
 
-.navbar-icon:hover {
+.can-hover .navbar-icon:hover {
   border: 1px solid var(--darkprimary);
   cursor: pointer;
   color: var(--darkprimary);
@@ -139,12 +139,12 @@ footer {
   text-decoration: none;
 }
 
-.navbar-link:hover {
+.can-hover .navbar-link:hover {
   color: var(--darkprimary);
   cursor: pointer;
 }
 
-.navbar-brand:hover {
+.can-hover .navbar-brand:hover {
   color: black;
 }
 
@@ -292,7 +292,7 @@ footer {
   transition: transform .2s;
 }
 
-.card-container:hover {
+.can-hover .card-container:hover {
   cursor: pointer;
   transform: scale(1.03);
 }
@@ -374,7 +374,7 @@ footer {
   text-decoration: none;
 }
 
-.contact-link:hover {
+.can-hover .contact-link:hover {
   color: var(--darksecondary);
 }
 
@@ -483,7 +483,7 @@ footer {
   text-decoration: none;
 }
 
-.portfolio-link:hover {
+.can-hover .portfolio-link:hover {
   color: white;
   cursor: pointer;
 }
