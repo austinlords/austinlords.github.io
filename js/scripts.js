@@ -20,8 +20,20 @@ $(function() {
 
   $('.card-container').on('click', function() {
     $(this).children().toggleClass('flip');
-  })
+  });
 
+  $(document.body).on('click', function() {
+    if ($('.navbar-menu[display=flex]') && ($(window).width() < 768)) {
+      $('.navbar-menu').slideUp(); 
+    }
+  });
 
+  $('.navbar-icon').on('click', function(e) {
+    e.stopPropagation();
+  });
 
-})
+  $('.navbar-list').on('click', function(e) {
+    e.stopPropagation();
+  });
+
+}) 

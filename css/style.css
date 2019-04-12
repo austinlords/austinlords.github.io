@@ -162,11 +162,11 @@ footer {
   flex-direction: column;
   list-style: none;
   color: black;
-  margin: 0;
-  padding: 0 20px 20px 20px;
-  line-height: 2rem;
+  margin: 0 0 0 auto;
+  padding: 0 25px 10px 20px;
+  line-height: 2.3rem;
   align-items: flex-end;
-  font-size: 105%;
+  font-size: 110%;
 }
 
 .page-section {
@@ -179,15 +179,15 @@ footer {
   background-image: url('../img/bg-masthead.jpg');
   background-size: cover;
   background-position: center;
-  margin-top: var(--navheight);
-  height: calc(100vh - var(--navheight));
+  margin-top: 0px;
+  height: 100vh;
   min-height: 400px;
 }
 
 .background-layer {
   width: 100%; 
   height: calc(100% - 20vh);
-  background: rgba(70, 70, 70, 0.5);
+  background: rgba(50, 50, 50, 0.7);
   padding-top: 20vh;
 }
 
@@ -272,7 +272,7 @@ footer {
 #aboutme-img {
   max-width: 200px;
   border-radius: 100%;
-  box-shadow: 3px 5px 10px 2px black;
+  box-shadow: 2px 2px 5px 1px black;
   margin-top: 20px;
   margin-bottom: 50px;
 }
@@ -386,14 +386,14 @@ footer {
   color: var(--darksecondary);
 }
 
-.portfolio-box {
+.project-tile {
   color: white;
   margin: 10px auto;
   justify-content: center;
   margin-bottom: 30px;
 }
 
-.portfolio-box:last-of-type {
+.project-tile:last-of-type {
   margin-bottom: 50px;
 }
 
@@ -530,22 +530,17 @@ footer {
   }
 
   .navbar-list {
-    display: flex;
     flex-direction: row;
-    list-style: none;
-    color: black;
-    margin: 0;
     padding: 0;
     line-height: 1.75rem;
     align-items: flex-end;
-    font-size: 105%;
   }
 
   .navbar-item {
     margin: auto 20px;
   }
 
-  .portfolio-box {
+  .project-tile {
     margin-top: 30px;
     margin-bottom: 30px;
   }
