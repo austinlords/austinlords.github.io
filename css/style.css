@@ -179,7 +179,7 @@ footer {
   background-image: url('../img/bg-masthead.jpg');
   background-size: cover;
   background-position: center;
-  margin-top: 0px;
+  margin-top: var(--navheight);
   height: 100vh;
   min-height: 400px;
 }
