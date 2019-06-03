@@ -25,16 +25,16 @@
       <div class="navbar-menu">
         <ul class="navbar-list">
           <li class="navbar-item">
-            <a class="navbar-link" href="#about-anchor">About</a>
+            <a class="navbar-link" href="#about">About</a>
           </li>
           <li class="navbar-item">
-            <a class="navbar-link" href="#skills-anchor">Skills</a>
+            <a class="navbar-link" href="#skills">Skills</a>
           </li>
           <li class="navbar-item">
-            <a class="navbar-link" href="#portfolio-anchor">Portfolio</a>
+            <a class="navbar-link" href="#portfolio">Portfolio</a>
           </li>
           <li class="navbar-item">
-            <a class="navbar-link" href="#contact-anchor">Contact</a>
+            <a class="navbar-link" href="#contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -49,26 +49,31 @@
       <div class='flex-container'>
         <h1 class='home-title'>Austin J. Lords</h1>
         <div class='divider bg-darkprimary'></div>
-        <p class="home-subtitles">Junior Software Developer</p>
+        <p class="home-subtitles">Software Developer</p>
         <p class="home-subtitles">Portland, OR</p>
         <i id='scroll-down-icon' class="fas fa-angle-double-down"></i>
       </div>
     </div>
   </section>
-  <!--/HOME-->
-
-  
+  <!--/HOME-->  
 
   <!-- ABOUT ME -->
-  <section class="page-section bg-darkprimary" id="about">
-    <a class='anchor' id='about-anchor'></a>
+  <section class="page-section bg-darkprimary" id="about-section">
+    <a class='anchor' id='about'></a>
     <div id='about-content' class="flex-container">
       <h1 class='section-header white'>About Me</h1>
-      <div class='divider bg-darksecondary'></div>
-      <p class='p-block white'>
-        Hello World! My name is Austin, nice to meet you.<br><br>
-        I am a young and ambitious full-stack web developer. I enjoy solving problems, learning new things, and building relationships. Some of my interests include mountain biking, watching the NBA (go Blazers!) and listening to podcasts. You can view some of my projects below. Let's be in touch!
-      </p>
+      <div class="w-100">
+        <div class='divider bg-darksecondary'></div>
+      </div>
+      <div class="flex-container">
+        <p class='p-bio white'>
+          Hello World! My name is Austin, nice to meet you.
+          I am a young and ambitious full-stack web developer. I like to build things and solve problems. Full-stack JavaScript (with MongoDB) is the flavor of the month in my programming journey. I also have experience in Python, relational databases (SQL), and front-end design (HTML, CSS). 
+        </p>
+        <p class='p-bio white'>
+          In addition to coding, I enjoy mountain biking, traveling, watching the NBA (go Blazers!) and listening to podcasts and learning new things.  You can view some of my projects and preferred technologies below. Let's be in touch!
+        </p>
+      </div>
       <div class='div-center w-100'>
         <img id='aboutme-img' class="img-fluid" src='./img/viaferrata.JPG' alt='Via Ferrata Climb'>
       </div>
@@ -77,112 +82,99 @@
   <!-- /ABOUT ME-->
 
   <!-- SKILLS -->
-  <section class="page-section bg-primary" id="skills">
-    <a class='anchor' id='skills-anchor'></a>
+  <section class="page-section bg-primary" id="skills-section">
+    <a class="anchor" id=skills></a>
     <div class="flex-container">
+      <!-- SKILLS HEADING-->
       <div class='flex-container w-100'>
         <h2 class="section-header">Skills</h2>
         <div class='divider bg-darkprimary'></div>
       </div>
+
+      <!-- SKILLS BODY -->
       <div class="flex-container" id='skills-box'>
-        <div class="card-container">
-          <div class="card-inner">
-            <div class="card-front">
-              <img src="./img/html.png" alt="" class="img-fluid">
-              <p class='skills-description'>HTML</p>
-            </div>
-            <div class="card-back">
-                <h2 class='skills-heading'>HTML</h2>
-                <div class='divider bg-darkprimary'></div>
-                <ul>
-                  <li>Bootstrap</li>
-                  <li></li>
-                  <li></li>
-                </ul>
-            </div>
+
+        <!-- SKILL -->
+        <div class="individual-skill flex-container">
+          <div class='skills-description'>
+            <h2>HTML & CSS</h2>
+            <p>
+              The building blocks of the web, HTML and CSS. This website was coded from stratch using pure HTML and CSS, no libraries or templates needed. I also have experience using Bootstrap, the most common front-end library. 
+            </p>
+            <p>
+              <strong>Skills/Technologies: </strong>
+              HTML5, CSS3, Bootstrap
+            </p>
+          </div>
+          <div class="flex-container">
+            <img class="skills-pic" src="./img/htmlcss.png" alt="HTML and CSS">
           </div>
         </div>
-        <div class="card-container">
-          <div class="card-inner">
-            <div class="card-front">
-              <img src="./img/css.png" alt="" class="img-fluid">
-              <p class='skills-description'>CSS</p>
-            </div>
-            <div class="card-back">
-                <h2 class='skills-heading'>CSS</h2>
-                <div class='divider bg-darkprimary'></div>
-                <ul>
-                  <li>Bootstrap</li>
-                  <li></li>
-                  <li></li>
-                </ul>
-            </div>
+
+        <!-- SKILL -->
+        <div class="individual-skill flex-container">
+          <div class="flex-container">
+            <img class="skills-pic" src="./img/nodejs.png" alt="JavaScript">
+          </div>
+          <div class='skills-description'>
+            <h2>Full-Stack JavaScript</h2>
+            <p>
+              JavaScript is my language of choice. Modern JavaScript is more than capable of running a full-stack application. Using the best modern practices (ES6), JavaScript can be a beautiful language. Restful API's, Asynchronous code, Object-Oriented programming, Functional programming, etc. You name it, I can do it in JavaScript. 
+            </p>
+            <p>
+              <strong>Skills/Technologies: </strong>
+              MERN Stack (MongoDB, Express, React, Node.js), jQuery, Bootstrap, ES6
+            </p>
           </div>
         </div>
-        <div class="card-container">
-          <div class="card-inner">
-            <div class="card-front">
-              <img src="./img/javascript.png" alt="" class="img-fluid">
-              <p class='skills-description'>JavaScript</p>
-            </div>
-            <div class="card-back">
-                <h2 class='skills-heading'>JavaScript</h2>
-                <div class='divider bg-darkprimary'></div>
-                <ul>
-                  <li>jQuery</li>
-                  <li></li>
-                  <li></li>
-                </ul>
-            </div>
+
+        <!-- SKILL -->
+        <div class="individual-skill flex-container">
+          <div class='skills-description'>
+            <h2>Databases</h2>
+            <p>
+              I have experience managing relational databases (SQL) and non-relational databases (MongoDB). The requirements of the project will determine which database schema is the best fit. 
+            </p>
+            <p>
+              <strong>Skills/Technologies: </strong>
+              MongoDB (with Mongoose), SQL (mySQL, SQL Server, SQLite)
+            </p>
+          </div>
+          <div class="flex-container">
+            <img class="skills-pic" src="./img/database.jpg" alt="Databases">
           </div>
         </div>
-        <div class="card-container">
-          <div class="card-inner">
-            <div class="card-front">
-              <img src="./img/python.png" alt="" class="img-fluid">
-              <p class='skills-description'>Python</p>
-            </div>
-            <div class="card-back">
-              <h2 class='skills-heading'>Python</h2>
-              <div class='divider bg-darkprimary'></div>
-              <ul>
-                <li>Django</li>
-                <li>Flask</li>
-                <li>Tkinter</li>
-              </ul>
-            </div>
+
+        <!-- SKILL -->
+        <div class="individual-skill flex-container">
+          <div class="flex-container">
+            <img class="skills-pic" src="./img/python.png" alt="Python">
           </div>
-        </div>
-        <div class="card-container">
-          <div class="card-inner">
-            <div class="card-front">
-              <img src="./img/database.jpg" alt="" class="img-fluid">
-              <p class='skills-description'>SQL</p>
-            </div>
-            <div class="card-back">
-              <h2 class='skills-heading'>SQL</h2>
-              <div class='divider bg-darkprimary'></div>
-              <ul>
-                <li>SQL Server</li>
-                <li>SQLite</li>
-                <li></li>
-              </ul>
-            </div>
+          <div class='skills-description'>
+            <h2>Python</h2>
+            <p>
+              Writing clean code in Python is a dream. Python was the first language I learned and I will always have a soft spot for it's clutter-free syntax. I have used Python for desktop application and web applications alike. 
+            </p>
+            <p>
+              <strong>Skills/Technologies: </strong>
+              Django, Tkinter, Object-Oriented Programming
+            </p>
           </div>
         </div>
       </div>
     </div>
   </section>
-<!--/SKILLS-->
+  <!--/SKILLS-->
 
   <!-- PORTFOLIO -->
-  <section class="page-section bg-darksecondary" id="projects" >
-    <a class='anchor' id='portfolio-anchor'></a>
+  <section class="page-section bg-darksecondary" id="portfolio-section" >
+    <a class='anchor' id='portfolio'></a>
     <div class="flex-container">
       <div class="flex-container w-100">
         <h2 class="section-header light">Portfolio</h2>
         <div class='divider bg-darkprimary'></div>
       </div>
+      <!-- Project -->
       <div class="flex-container project-tile">
         <div class='portfolio-description'>
           <p class='project-title project-name'>Name:</p>
@@ -202,11 +194,11 @@
         </div>
       </div>
 
-      <!-- projects divider -->
+      <!-- Projects divider -->
       <div class='w-100'>
         <div class='projects-divider bg-darkprimary'></div>
       </div>
-
+      <!-- Project -->
       <div class="flex-container project-tile">
         <div class='portfolio-description'>
           <p class='project-title project-name'>Name:</p>
@@ -230,7 +222,7 @@
       <div class='w-100'>
         <div class='projects-divider bg-darkprimary'></div>
       </div>
-
+      <!-- Project -->
       <div class="flex-container project-tile">
         <div class='portfolio-description'>
           <p class='project-title project-name'>Name:</p>
@@ -254,8 +246,8 @@
   <!-- /PORTFOLIO -->
 
   <!-- CONTACT -->
-  <section class="page-section bg-white" id="contact" >
-    <a class='anchor' id='contact-anchor'></a>
+  <section class="page-section bg-white" id="contact-section" >
+    <a class='anchor' id='contact'></a>
     <div class="flex-container">
       <div class="flex-container w-100">
         <h2 class="section-header darksecondary">Contact</h2>
@@ -292,10 +284,6 @@
 
   <!-- jQUERY -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
-  <!-- FREE CODE CAMP VALIDATOR 
-  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
-  -->
 
   <!-- CUSTOM JAVASCRIPT -->
   <script src="./js/scripts.js"></script>
