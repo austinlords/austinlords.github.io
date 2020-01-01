@@ -46,9 +46,11 @@
         </div>
         <div class="navbar-menu">
           <ul class="navbar-list">
+            <!-- about section
             <li class="navbar-item">
               <a class="navbar-link" href="#about">About</a>
             </li>
+          -->
             <li class="navbar-item">
               <a class="navbar-link" href="#skills">Skills</a>
             </li>
@@ -78,7 +80,7 @@
     </section>
     <!--/HOME-->
 
-    <!-- ABOUT ME -->
+    <!-- ABOUT ME 
     <section class="page-section bg-darkprimary" id="about-section">
       <a class="anchor" id="about"></a>
       <div id="about-content" class="flex-container">
@@ -111,7 +113,7 @@
         </div>
       </div>
     </section>
-    <!-- /ABOUT ME-->
+     /ABOUT ME-->
 
     <!-- SKILLS -->
     <section class="page-section bg-primary" id="skills-section">
@@ -130,10 +132,11 @@
             <div class="skills-description">
               <h2>HTML & CSS</h2>
               <p>
-                The building blocks of the web, HTML and CSS. This website was
-                coded from stratch using pure HTML and CSS, no libraries or
-                templates needed. I also have experience using Bootstrap, the
-                most common front-end library.
+                Responsive web design starts with HTML and CSS. This website was
+                built from stratch using custom HTML and CSS, no libraries or
+                templates needed. I'm comfortable with CSS Grid, Flexbox, media
+                queries, keyframes, and more. I also have experience using
+                Bootstrap, the most common front-end library.
               </p>
               <p>
                 <strong>Skills/Technologies: </strong>
@@ -152,17 +155,24 @@
           <!-- SKILL -->
           <div class="individual-skill flex-container">
             <div class="flex-container">
-              <img class="skills-pic" src="./img/react.png" alt="JavaScript" />
+              <img
+                class="skills-pic"
+                src="./img/javascript.png"
+                alt="JavaScript"
+                style="padding: 20px"
+              />
             </div>
             <div class="skills-description">
               <h2>Full-Stack JavaScript</h2>
               <p>
-                JavaScript is my programming language of choice. I have
-                extensive experience in building React.js applications and I
-                currently use Javascript professionally every single day. Using
-                the best modern practices (ES6+), JavaScript can be a beautiful
-                language. I am comfortable building in both the front-end &
-                back-end.
+                From Node.js to React Hooks, I have experience in building
+                full-stack applications in Javascript. I love the flexibility
+                and versitility of Javascript. I've used Javascript for
+                object-oriented programming, functional programming,
+                asyncronyous operations, higher-order functions and more.
+                Currently I use Javascript professionally every single day.
+                Using modern syntax (ES6+), JavaScript can be a beautiful
+                language.
               </p>
               <p>
                 <strong>Skills/Technologies: </strong>
@@ -231,6 +241,52 @@
         <div class="flex-container project-tile">
           <div class="portfolio-description">
             <p class="project-title project-name">Name:</p>
+            <p class="name-content project-content">Notable</p>
+            <p class="project-title project-description">Description:</p>
+            <p class="description-content project-content">
+              A full-feature note taking web app featuring a rich-text editor,
+              authentiction, live search, filtering and CRUD operations.
+            </p>
+            <p class="project-title project-date">Date:</p>
+            <p class="date-content project-content">2019</p>
+            <p class="project-title project-tech">Tech:</p>
+            <p class="tech-content project-content">
+              Full-Stack JavaScript: React, Express, MongoDB, Mongoose, JWT,
+              Draft.js
+            </p>
+            <p class="view-project">
+              <a
+                class="portfolio-link"
+                href="https://www.austinlords.com/notable/"
+                target="_blank"
+                >view app <i class="fas fa-external-link-alt"></i></a
+              >&nbsp;|&nbsp;<a
+                class="portfolio-link"
+                href="https://github.com/austinlords/notable/"
+                target="_blank"
+                >view on GitHub <i class="fab fa-github"></i
+              ></a>
+            </p>
+          </div>
+          <div class="portfolio-img">
+            <div class="flex-container portfolio-img-holder">
+              <a href="https://www.austinlords.com/notable/" target="_blank"
+                ><img
+                  class="img-fluid project-img"
+                  src="./img/notable.PNG"
+                  alt="Notable: a note taking web app"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <!-- Projects divider -->
+        <div class="w-100">
+          <div class="projects-divider bg-darkprimary"></div>
+        </div>
+        <!-- Project -->
+        <div class="flex-container project-tile">
+          <div class="portfolio-description">
+            <p class="project-title project-name">Name:</p>
             <p class="name-content project-content">Pokemon Memory</p>
             <p class="project-title project-description">Description:</p>
             <p class="description-content project-content">
@@ -264,54 +320,6 @@
                   class="img-fluid project-img"
                   src="./img/memory.PNG"
                   alt="pokemon memory"
-              /></a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Projects divider -->
-        <div class="w-100">
-          <div class="projects-divider bg-darkprimary"></div>
-        </div>
-        <!-- Project -->
-        <div class="flex-container project-tile">
-          <div class="portfolio-description">
-            <p class="project-title project-name">Name:</p>
-            <p class="name-content project-content">Notable</p>
-            <p class="project-title project-description">Description:</p>
-            <p class="description-content project-content">
-              Built with React.js. A full-feature note taking web app. Front-end
-              only.
-            </p>
-            <p class="project-title project-date">Date:</p>
-            <p class="date-content project-content">2019</p>
-            <p class="project-title project-tech">Tech:</p>
-            <p class="tech-content project-content">
-              React.js
-            </p>
-            <p class="view-project">
-              <a
-                class="portfolio-link"
-                href="https://www.austinlords.com/notable-react/"
-                target="_blank"
-                >view app <i class="fas fa-external-link-alt"></i></a
-              >&nbsp;|&nbsp;<a
-                class="portfolio-link"
-                href="https://github.com/austinlords/notable-react"
-                target="_blank"
-                >view on GitHub <i class="fab fa-github"></i
-              ></a>
-            </p>
-          </div>
-          <div class="portfolio-img">
-            <div class="flex-container portfolio-img-holder">
-              <a
-                href="https://www.austinlords.com/notable-react/"
-                target="_blank"
-                ><img
-                  class="img-fluid project-img"
-                  src="./img/notable.PNG"
-                  alt="Notable: a note taking web app"
               /></a>
             </div>
           </div>
@@ -394,8 +402,8 @@
               </a>
             </div>
             <div>
-              <a class="contact-link" href="mailto:austinlords@outlook.com">
-                austinlords@outlook.com
+              <a class="contact-link" href="mailto:lords.austin@gmail.com">
+                lords.austin@gmail.com
               </a>
             </div>
           </div>
@@ -407,7 +415,7 @@
     <!-- FOOTER -->
     <footer class="page-section">
       <div class="flex-container">
-        <div id="footer-content">Copyright &copy; 2019 - Austin Lords</div>
+        <div id="footer-content">Copyright &copy; 2020 - Austin Lords</div>
       </div>
     </footer>
     <!-- /FOOTER-->
